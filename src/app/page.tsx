@@ -46,7 +46,7 @@ export default function Home() {
       description: "Get millions of credits quickly without the grind.",
       icon: <Zap className="h-10 w-10 text-primary" />,
       price: "From $15",
-      link: "#services",
+      link: "/services/credit-farm",
     },
     {
       title: "Campaign Missions",
@@ -67,7 +67,7 @@ export default function Home() {
       description: "Rapidly level up your tanks and crews to tier X.",
       icon: <ChevronsUp className="h-10 w-10 text-primary" />,
       price: "From $25",
-      link: "#services",
+      link: "/services/powerleveling",
     },
     {
       title: "Exp Farm",

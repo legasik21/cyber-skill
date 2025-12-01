@@ -11,10 +11,10 @@ export default function Header() {
 
   const services = [
     { id: "wn8-boost", label: "WN8 Boosting", href: "/services/wn8-boost" },
-    { id: "credit-farm", label: "Credit Farming", href: "#services" },
+    { id: "credit-farm", label: "Credit Farming", href: "/services/credit-farm" },
     { id: "campaign", label: "Campaign Missions", href: "#services" },
     { id: "moe", label: "Mark of Excellence", href: "#services" },
-    { id: "powerleveling", label: "Powerleveling", href: "#services" },
+    { id: "powerleveling", label: "Powerleveling", href: "/services/powerleveling" },
     { id: "exp-farm", label: "Exp Farm", href: "#services" },
     { id: "onslaught", label: "Onslaught", href: "#services" },
     { id: "ace-tanker", label: "Ace Tanker", href: "#services" },
