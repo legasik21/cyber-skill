@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/Button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card"
 import { Input } from "@/components/ui/Input"
-import { Shield, Target, Zap, Trophy, ChevronRight, Star } from "lucide-react"
+import { Shield, Target, Zap, Trophy, ChevronRight, Star, ChevronsUp, BookOpen, Swords, Medal } from "lucide-react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
@@ -56,6 +56,30 @@ export default function Home() {
       description: "Get 3 marks on your favorite tanks. Top 1% performance.",
       icon: <Star className="h-10 w-10 text-primary" />,
       price: "From $20",
+    },
+    {
+      title: "Powerleveling",
+      description: "Rapidly level up your tanks and crews to tier X.",
+      icon: <ChevronsUp className="h-10 w-10 text-primary" />,
+      price: "From $25",
+    },
+    {
+      title: "Exp Farm",
+      description: "Gain experience points for any tank in your garage.",
+      icon: <BookOpen className="h-10 w-10 text-primary" />,
+      price: "From $5",
+    },
+    {
+      title: "Onslaught",
+      description: "Dominate the Onslaught mode and climb the ranks.",
+      icon: <Swords className="h-10 w-10 text-primary" />,
+      price: "Custom",
+    },
+    {
+      title: "Ace Tanker",
+      description: "Get the Ace Tanker mastery badge on your vehicles.",
+      icon: <Medal className="h-10 w-10 text-primary" />,
+      price: "From $15",
     },
   ]
 
@@ -559,6 +583,10 @@ export default function Home() {
                     <option value="credits">Credit Farming</option>
                     <option value="campaign">Campaign Missions</option>
                     <option value="moe">Mark of Excellence</option>
+                    <option value="powerleveling">Powerleveling</option>
+                    <option value="exp-farm">Exp Farm</option>
+                    <option value="onslaught">Onslaught</option>
+                    <option value="ace-tanker">Ace Tanker</option>
                   </select>
                   {form.formState.errors.service && (
                     <p className="text-sm text-red-500">{form.formState.errors.service.message}</p>

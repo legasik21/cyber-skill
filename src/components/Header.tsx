@@ -10,10 +10,14 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const services = [
-    { label: "WN8 Boosting", href: "#services" },
-    { label: "Credit Farming", href: "#services" },
-    { label: "Campaign Missions", href: "#services" },
-    { label: "Mark of Excellence", href: "#services" },
+    { id: "wn8-boost", label: "WN8 Boosting", href: "#services" },
+    { id: "credit-farm", label: "Credit Farming", href: "#services" },
+    { id: "campaign", label: "Campaign Missions", href: "#services" },
+    { id: "moe", label: "Mark of Excellence", href: "#services" },
+    { id: "powerleveling", label: "Powerleveling", href: "#services" },
+    { id: "exp-farm", label: "Exp Farm", href: "#services" },
+    { id: "onslaught", label: "Onslaught", href: "#services" },
+    { id: "ace-tanker", label: "Ace Tanker", href: "#services" },
   ]
 
   const navItems = [
@@ -68,7 +72,7 @@ export default function Header() {
                 <div className="py-2">
                   {services.map((service) => (
                     <Link
-                      key={service.label}
+                      key={service.id}
                       href={service.href}
                       className="block px-4 py-2 text-sm text-foreground hover:bg-secondary hover:text-primary transition-colors"
                     >
@@ -119,7 +123,7 @@ export default function Header() {
                 <div className="pl-4 space-y-2">
                   {services.map((service) => (
                     <Link
-                      key={service.label}
+                      key={service.id}
                       href={service.href}
                       className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1"
                       onClick={() => setIsMenuOpen(false)}
